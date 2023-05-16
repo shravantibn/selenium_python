@@ -38,6 +38,9 @@ for container in containers:
 
 my_dict = {'title': titles, 'subtitle': subtitles, 'link': links}
 df_headlines = pd.DataFrame(my_dict)
-df_headlines.to_csv('headline.csv')
+file_name = f'football_headlines_{month_day_year}.csv'
+final_path = os.path.join(application_path, file_name)
+df_headlines.to_csv(final_path)
+#df_headlines.to_csv('headline.csv')
 
 driver.quit()
