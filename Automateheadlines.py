@@ -6,7 +6,7 @@ from datetime import datetime
 import os
 import sys
 
-# Preparing script before we convert it to executable
+# Preparing script before we convert it to executable.Path of file to be stored
 application_path = os.path.dirname(sys.executable)
 
 # Date in format MMDDYYYY
