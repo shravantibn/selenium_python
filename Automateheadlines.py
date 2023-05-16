@@ -2,6 +2,16 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import pandas as pd
+from datetime import datetime
+import os
+import sys
+
+# Preparing script before we convert it to executable
+application_path = os.path.dirname(sys.executable)
+
+# Date in format MMDDYYYY
+now = datetime.now()
+month_day_year = now.strftime("%m%d%Y")
 
 web = 'https://www.thesun.co.uk/sport/football/'
 path = '/Users/frankandrade/Downloads/chromedriver'  
